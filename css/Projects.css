@@ -1,0 +1,251 @@
+/*Projects page */
+
+.body {
+    height: 100%;
+}
+
+p {
+    color: whitesmoke;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+li {
+    color: whitesmoke;
+    font-size: 25px;
+    padding-bottom: 12px;
+}
+
+
+/* 1st section */
+.firstRow {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.leftColumn1{
+    position: relative;
+    flex: 1 1 0;
+    background-color: #ee1439;
+    padding: 10px;
+    display: block;
+
+}
+.rightColumn1 {
+    flex: 2 1 0;
+    background-color: #383838;
+    padding: 25px;
+    margin-left: 20px;
+}
+
+/* 2nd section */
+.secondRow {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.leftColumn2{
+    flex: 2 1 0;
+    background-color: #383838;
+    padding: 25px;
+    margin-right: 20px;
+}
+
+.rightColumn2 {
+    position: relative;
+    flex: 1 1 0;
+    background-color: #ee1439;
+    padding: 10px;
+    display: block;
+}
+
+
+/* 3rd section */
+.thirdRow {
+    height: 32%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.leftColumn3{
+    position: relative;
+    flex: 1 1 0;
+    background-color: #ee1439;
+    padding: 10px;
+    display: block;
+}
+
+.rightColumn3 {
+    flex: 2 1 0;
+    background-color: #383838;
+    padding: 25px;
+    margin-left: 20px;
+}
+
+img {
+    height: auto;
+}
+
+
+.mySlides1 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+/*img slide shows*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  
+
+  .text {
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .dot, .dots, .dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover, .dots:hover, .dot2:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade, .fade1, .fade2 {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @media screen and (max-width: 1250px) {
+    h2 {
+        font-size: 30px;
+    }
+    
+    li {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+
+
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .firstRow {
+        height: 30%; 
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        max-width: 75%;
+    }
+    .secondRow {
+        height: 33%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 10px auto;
+        max-width: 75%;
+    }
+    .thirdRow {
+        height: 33%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        max-width: 75%;
+    }
+
+    .rightColumn3 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .leftColumn2 {
+        margin-right: 0;
+        text-align: center;
+    }
+    .rightColumn1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    ul {
+        list-style-position: inside;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    img {
+        max-height: auto;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    
+    li {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 775px) {
+    h2 {
+        font-size: 28px;
+    }
+    
+    li {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    ul {
+        padding-left: 5px;
+    }
+
+  }

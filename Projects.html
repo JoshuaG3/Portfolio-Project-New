@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" /> 
+    <link rel="stylesheet" type="text/css" href="/css/Projects.css" />
+    <link href='https://fonts.googleapis.com/css?family=Over the Rainbow' rel='stylesheet'>
+    <title>Projects</title>
+</head>
+<header>
+    <div class="header">
+        <a href="Home.html"><h1>JG</h1></a>
+        <div class="nav">
+            <a href="AboutMe.html">About Me</a>
+            <a href="Projects.html">Projects</a>
+            <a id="rightNav" href="Contact.html">Contact</a>
+        </div>
+    </div> 
+</header>
+
+<body>
+    <div class="body">
+        <div class="firstRow">
+            <div class="leftColumn1">
+
+                <div class="mySlides fade">
+                    <img src="imgs/img1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                  
+                <div class="mySlides fade">
+                    <img src="imgs/img2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+                  
+                <div class="mySlides fade">
+                    <img src="imgs/img3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>
+            </div>
+
+
+            <div class="rightColumn1">
+                <h2>Project Name</h2>
+                <ul>
+                    <li>What was the project written in?</li>
+                    <li>What does the project do?</li>
+                    <li>How was or will the project be deployed?</li>
+                    <li>What problems does this project solve?</li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="secondRow">
+            <div class="leftColumn2">
+                <h2>Project Name</h2>
+                <ul>
+                    <li>What was the project written in?</li>
+                    <li>What does the project do?</li>
+                    <li>How was or will the project be deployed?</li>
+                    <li>What problems does this project solve?</li>
+                </ul>
+
+            </div>
+
+            <div class="rightColumn2">
+                <div class="mySlides2 fade2">
+                    <img src="imgs/img1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                  
+                <div class="mySlides2 fade2">
+                    <img src="imgs/img2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+                  
+                <div class="mySlides2 fade2">
+                    <img src="imgs/img3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides2(-1)">❮</a>
+                <a class="next" onclick="plusSlides2(1)">❯</a>
+                  
+
+                  <div style="text-align:center">
+                    <span class="dot2" onclick="currentSlide2(1)"></span> 
+                    <span class="dot2" onclick="currentSlide2(2)"></span> 
+                    <span class="dot2" onclick="currentSlide2(3)"></span> 
+                  </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="thirdRow">
+            <div class="leftColumn3">
+                <div class="mySlides1 fade1">
+                    <img src="imgs/img1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                  
+                <div class="mySlides1 fade1">
+                    <img src="imgs/img2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+                  
+                <div class="mySlides1 fade1">
+                    <img src="imgs/img3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides1(-1)">❮</a>
+                <a class="next" onclick="plusSlides1(1)">❯</a>
+                  
+
+                  <div style="text-align:center">
+                    <span class="dots" onclick="currentSlide1(1)"></span> 
+                    <span class="dots" onclick="currentSlide1(2)"></span> 
+                    <span class="dots" onclick="currentSlide1(3)"></span> 
+                  </div>
+            </div>
+
+            <div class="rightColumn3">
+                <h2>Project Name</h2>
+                <ul>
+                    <li>What was the project written in?</li>
+                    <li>What does the project do?</li>
+                    <li>How was or will the project be deployed?</li>
+                    <li>What problems does this project solve?</li>
+                </ul>
+
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+    <script>
+        let slideIndex2 = 1;
+        showSlides2(slideIndex2);
+        
+        function plusSlides2(j) {
+        showSlides2(slideIndex2 += j);
+        }
+        
+        function currentSlide2(j) {
+        showSlides2(slideIndex2 = j);
+        }
+        
+        function showSlides2(j) {
+        let k;
+        let slides = document.getElementsByClassName("mySlides2");
+        let dots = document.getElementsByClassName("dot2");
+        if (j > slides.length) {slideIndex2 = 1}    
+        if (j < 1) {slideIndex2 = slides.length}
+        for (k = 0; k < slides.length; k++) {
+            slides[k].style.display = "none";  
+        }
+        for (k = 0; k < dots.length; k++) {
+            dots[k].className = dots[k].className.replace(" active", "");
+        }
+        slides[slideIndex2-1].style.display = "block";  
+        dots[slideIndex2-1].className += " active";
+        }
+    </script>
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+        <script>
+            let slideIndex1 = 1;
+            showSlides1(slideIndex1);
+            
+            function plusSlides1(c) {
+            showSlides1(slideIndex1 += c);
+            }
+            
+            function currentSlide1(c) {
+            showSlides1(slideIndex1 = c);
+            }
+            
+            function showSlides1(c) {
+            let b;
+            let slides1 = document.getElementsByClassName("mySlides1");
+            let dots1 = document.getElementsByClassName("dots");
+            if (c > slides1.length) {slideIndex1 = 1}    
+            if (c < 1) {slideIndex1 = slides1.length}
+            for (b = 0; b < slides1.length; b++) {
+                slides1[b].style.display = "none";  
+            }
+            for (b = 0; b < dots1.length; b++) {
+                dots1[b].className = dots1[b].className.replace(" active", "");
+            }
+            slides1[slideIndex1-1].style.display = "block";  
+            dots1[slideIndex1-1].className += " active";
+            }
+        </script>
+
+
+
+
+
+    
+
+</html>
